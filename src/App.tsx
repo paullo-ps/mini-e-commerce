@@ -25,7 +25,7 @@ export const App = () => {
   });
 
   const [isCartOpen, setIsCartOpen] = useState(false);
-  // Novo estado para controlar o aviso verde na tela
+  
   const [snackbarOpen, setSnackbarOpen] = useState(false);
 
   useEffect(() => {
@@ -47,7 +47,6 @@ export const App = () => {
       return [...prevCart, { ...product, quantity: 1 }];
     });
     
-    // Abre o aviso de sucesso!
     setSnackbarOpen(true);
   };
 
@@ -64,7 +63,6 @@ export const App = () => {
     });
   };
 
-  // Função para fechar o aviso verde (seja por tempo ou pelo X)
   const handleCloseSnackbar = (_event?: React.SyntheticEvent | Event, reason?: string) => {
     if (reason === 'clickaway') {
       return;

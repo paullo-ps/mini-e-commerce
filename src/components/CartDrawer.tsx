@@ -1,4 +1,3 @@
-// src/components/CartDrawer.tsx
 import { Drawer, Box, Typography, Divider, List, ListItem, ListItemText, IconButton, Button } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import type { CartItem } from '../interfaces/Product';

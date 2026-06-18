@@ -1,4 +1,3 @@
-// src/components/SnackbarAlert.tsx
 import { Snackbar, Alert } from '@mui/material';
 
 interface SnackbarAlertProps {

@@ -1,4 +1,3 @@
-// src/components/Header.tsx
 import { AppBar, Toolbar, Typography, Badge, IconButton } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 

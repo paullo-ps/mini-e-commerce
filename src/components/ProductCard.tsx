@@ -1,4 +1,3 @@
-// src/components/ProductCard.tsx
 import { Card, CardMedia, CardContent, CardActions, Typography, Button } from '@mui/material';
 import type { Product } from '../interfaces/Product';
 

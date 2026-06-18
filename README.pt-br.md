@@ -2,30 +2,30 @@
 
 [🇺🇸 English](./README.md) | [🇧🇷 Português](./README.pt-br.md)
 
-Um mini e-commerce responsivo desenvolvido com **React**, **TypeScript** e **Material UI (MUI)**, criado com o objetivo de demonstrar conhecimentos em desenvolvimento Front-end moderno, gerenciamento de estado, persistência de dados e construção de interfaces responsivas.
+A responsive mini e-commerce application built with **React**, **TypeScript**, and **Material UI (MUI)**. This project was developed for my portfolio to demonstrate modern Front-end development practices, state management, data persistence, and responsive UI design.
 
-## 📸 Demonstração
+## 📸 Demo
 
 <p align="center">
-  <img src="./src/assets/demo.png" alt="Demonstração do projeto" width="800">
+  <img src="./src/assets/demo.png" alt="Project Demo" width="800">
 </p>
 
 ---
 
-## ✨ Funcionalidades
+## ✨ Features
 
-* 📦 Listagem dinâmica de produtos.
-* 🛒 Carrinho de compras com controle de quantidade.
-* ➕ Agrupamento automático de produtos repetidos.
-* 💾 Persistência dos dados utilizando **LocalStorage**.
-* 📱 Interface totalmente responsiva.
-* 📊 Cálculo automático do valor total do carrinho.
-* 🗑️ Remoção individual de itens.
-* 🔔 Feedback visual através de **Snackbar** e **Alert** do Material UI.
+* 📦 Dynamic product listing.
+* 🛒 Shopping cart with quantity management.
+* ➕ Automatic grouping of duplicate products.
+* 💾 Data persistence using **LocalStorage**.
+* 📱 Fully responsive interface.
+* 📊 Automatic calculation of the cart total.
+* 🗑️ Individual item removal.
+* 🔔 User feedback with **Material UI Snackbar** and **Alert** components.
 
 ---
 
-## 🛠️ Tecnologias
+## 🛠️ Technologies
 
 * React 18/19
 * TypeScript
@@ -36,7 +36,7 @@ Um mini e-commerce responsivo desenvolvido com **React**, **TypeScript** e **Mat
 
 ---
 
-## 📂 Estrutura do Projeto
+## 📂 Project Structure
 
 ```text
 src/
@@ -46,56 +46,56 @@ src/
 │   ├── Header.tsx
 │   ├── ProductCard.tsx
 │   └── SnackbarAlert.tsx
-├── mock/
-│   └── products.ts
 ├── interfaces/
 │   └── Product.ts
+├── mock/
+│   └── products.ts
 ├── App.tsx
 └── main.tsx
 ```
 
 ---
 
-## 💡 Conceitos Aplicados
+## 💡 Technical Concepts
 
-Durante o desenvolvimento foram utilizados conceitos importantes do ecossistema React:
+This project was designed to apply important React development concepts.
 
-### Gerenciamento de Estado
+### State Management
 
-Utilização do `useState` para controlar o carrinho de compras de forma reativa e previsível.
+The shopping cart is managed using React's `useState` hook, ensuring predictable and reactive state updates.
 
-### Atualizações Imutáveis
+### Immutable State Updates
 
-Todas as alterações no carrinho utilizam callbacks do React:
+All cart updates use React callback functions:
 
 ```tsx
 setCart((prevCart) => {
-    // atualização baseada no estado anterior
+    // Update based on the previous state
 });
 ```
 
-Essa abordagem evita problemas relacionados a estados assíncronos (*race conditions*).
+This approach prevents issues related to asynchronous state updates and race conditions.
 
-### Manipulação de Arrays
+### Array Manipulation
 
-Foram utilizados diversos métodos do JavaScript para resolver regras de negócio:
+Several JavaScript array methods were used to implement the application's business logic:
 
 * `find()`
 * `map()`
 * `filter()`
 * `reduce()`
 
-Esses métodos são responsáveis por:
+These methods are responsible for:
 
-* localizar produtos;
-* atualizar quantidades;
-* remover itens;
-* calcular o valor total;
-* evitar duplicações.
+* locating products;
+* updating quantities;
+* removing items;
+* calculating the cart total;
+* preventing duplicate entries.
 
-### Persistência Local
+### Local Data Persistence
 
-O carrinho permanece salvo mesmo após atualizar a página utilizando a API nativa do navegador:
+The shopping cart remains available even after refreshing the page by using the browser's native **LocalStorage API**.
 
 ```javascript
 localStorage
@@ -103,55 +103,55 @@ localStorage
 
 ---
 
-## 🎨 Interface Responsiva
+## 🎨 Responsive Design
 
-O layout foi construído utilizando os componentes do Material UI e CSS Grid através do componente `Box`, proporcionando uma interface adaptável para diferentes tamanhos de tela.
+The interface was built with Material UI components and CSS Grid through the `Box` component, providing a clean and responsive layout across different screen sizes.
 
 ---
 
-## 🚀 Como executar
+## 🚀 Getting Started
 
-### Clone o projeto
+### Clone the repository
 
 ```bash
 git clone https://github.com/paullo-ps/mini-e-commerce.git
 ```
 
-### Entre na pasta
+### Navigate to the project folder
 
 ```bash
 cd mini-e-commerce
 ```
 
-### Instale as dependências
+### Install dependencies
 
-**Com npm**
+**Using npm**
 
 ```bash
 npm install
 ```
 
-**Com Yarn**
+**Using Yarn**
 
 ```bash
 yarn
 ```
 
-### Execute o projeto
+### Start the development server
 
-**Com npm**
+**Using npm**
 
 ```bash
 npm run dev
 ```
 
-**Com Yarn**
+**Using Yarn**
 
 ```bash
 yarn dev
 ```
 
-O projeto ficará disponível em:
+The application will be available at:
 
 ```text
 http://localhost:5173
@@ -159,40 +159,39 @@ http://localhost:5173
 
 ---
 
-## 📚 Aprendizados
+## 📚 What I Learned
 
-Este projeto foi desenvolvido para consolidar conhecimentos em:
+This project helped reinforce my knowledge of:
 
-* React Hooks
-* Componentização
+* Component-based architecture
 * TypeScript
 * Material UI
-* Gerenciamento de estado
-* Persistência de dados
-* Manipulação de arrays
-* Responsividade
-* Boas práticas de desenvolvimento Front-end
+* State management
+* Data persistence
+* JavaScript array manipulation
+* Responsive design
+* Front-end development best practices
 
 ---
 
-## 🔮 Melhorias Futuras
+## 🔮 Future Improvements
 
-* Integração com API REST.
-* Página de detalhes do produto.
-* Sistema de autenticação.
-* Favoritos.
-* Busca por produtos.
-* Filtros por categoria.
-* Ordenação por preço.
-* Checkout.
-* Context API ou Redux para gerenciamento global de estado.
-* Testes unitários com Vitest e React Testing Library.
+* REST API integration.
+* Product details page.
+* User authentication.
+* Favorites (Wishlist).
+* Product search.
+* Category filtering.
+* Price sorting.
+* Checkout flow.
+* Global state management with Context API or Redux.
+* Unit tests using Vitest and React Testing Library.
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Author
 
 **Paulo Sérgio Mendes dos Santos**
 
-* GitHub: https://github.com/paullo-ps/mini-e-commerce.git
+* GitHub: https://github.com/paullo-ps
 * LinkedIn: https://www.linkedin.com/in/paulo-s%C3%A9rgio-mendes-dos-santos-914a29200/

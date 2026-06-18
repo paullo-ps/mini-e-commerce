@@ -46,10 +46,10 @@ src/
 │   ├── Header.tsx
 │   ├── ProductCard.tsx
 │   └── SnackbarAlert.tsx
-├── mock/
-│   └── products.ts
 ├── interfaces/
 │   └── Product.ts
+├── mock/
+│   └── products.ts
 ├── App.tsx
 └── main.tsx
 ```
@@ -163,7 +163,6 @@ http://localhost:5173
 
 This project helped reinforce my knowledge of:
 
-* React Hooks
 * Component-based architecture
 * TypeScript
 * Material UI
